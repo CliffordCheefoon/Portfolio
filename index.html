@@ -12,7 +12,10 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-B10R9XNMWZ');
+    gtag('config', 'G-B10R9XNMWZ',  {
+      cookie_domain: location.hostname,
+      cookie_flags: "SameSite=None;Secure",
+    });
     </script>
   <script type="module" crossorigin src="assets/index-0IWkJnmJ.js"></script>
   <link rel="stylesheet" crossorigin href="assets/index-DtGSrOWt.css">
@@ -21,4 +24,3 @@
     <div id="root"></div>
   </body>
 </html>
-
